@@ -1,0 +1,184 @@
+.bento-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #242229;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 42rem;
+    margin: 0;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    gap: 20px;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+
+
+.bento-item {
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-section {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.head-text {
+    
+    font-size: 3rem;
+    color: rgb(242, 230, 230);
+    text-shadow: white;
+}
+.btn-text{
+    color: rgb(242, 230, 230);
+
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.btn-text:hover{
+    transform:none;
+    box-shadow:none;
+}
+.btn :hover{
+    box-shadow: #242229;
+}
+.explore-btn{
+    position: absolute;
+    bottom:3rem;
+    
+}
+.explore-btn:hover{
+    transform: none;
+    box-shadow: none;
+}
+.image-section{
+    background-image: url('../assets/pexels-filippo-bergamaschi-202684-986772.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-section img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+.graph-section {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 1;
+    background-color: rgb(32, 6, 60);
+}
+
+.text-section1 {
+    grid-column: 3 / span 1;
+    grid-row: 2 / span 1;
+    background-color: rgb(244, 224, 173);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+}
+.text-section1 :hover{
+    transform: none;
+    box-shadow: none;
+}
+.blog-upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.blog-upper h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.blog-upper .arrow{
+    color: red;
+}
+.arrow-up {
+    padding-left: 8.8rem;
+    font-size: 1.8rem;
+    color: black;
+}
+.arrow-up :hover{
+    color:rgb(66, 52, 27);
+    transform: scale(1.2);
+}
+.text-section1 h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(62, 57, 57);
+    margin-top: -2rem;
+    margin-bottom: 0.3rem ;
+}
+
+.text-section1 p {
+    font-size: 3rem;
+    font-weight: 600;
+    color: rgb(62, 57, 57);
+    
+}
+
+.text-section2 {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+    background-color: rgb(194, 140, 245);
+}
+.text-section2:hover{
+    transform: none;
+    box-shadow: none;
+}
+.bento-item:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .image-section:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .graph-section:hover {
+    background-color: rgba(32, 6, 60, 0.8);
+  }
+  
+  .text-section1:hover {
+    background-color:  rgb(244, 224, 173);
+  }
+  
+  .text-section2:hover {
+    background-color: rgb(194, 140, 245);
+  }
+  .faq-heading1{
+    position: absolute;
+    bottom: 3rem;
+  }
+  .faq-heading2{
+    position: absolute;
+    bottom: 0.3rem;
+    color: #242229;
+  }
